@@ -1,0 +1,9 @@
+.nav__link {
+  margin-right: 5rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}

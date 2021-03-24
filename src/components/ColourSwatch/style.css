@@ -1,0 +1,17 @@
+.colour-swatch {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 5rem;
+}
+
+.colour-swatch__colour {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.colour-swatch__hex {
+  text-align: center;
+  margin-top: 0.5rem;
+}

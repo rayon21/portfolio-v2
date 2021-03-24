@@ -1,0 +1,24 @@
+.footer {
+  width: 100%;
+  background-color: #333;
+  min-height: 20rem;
+  padding: 2rem;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  display: block;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 3rem;
+  display: block;
+}
