@@ -31,13 +31,14 @@ body {
 
 .style__heading {
   border-top: 1px solid var(--grey500);
-  padding-top: 1rem;
+  padding-top: 2rem;
   font-size: 1rem;
   color: var(--grey300);
 }
 
 .style__content {
   margin-left: 15vw;
+  margin-bottom: 5rem;
 }
 
 .--large-font {
@@ -45,6 +46,10 @@ body {
   padding: 0;
   margin: 0;
   color: var(--greyDarker);
+}
+
+.--block {
+  display: block;
 }
 
 /* BUTTONS */
@@ -86,4 +91,20 @@ body {
 
 .input:focus {
   border-color: var(--primary);
+}
+
+/* BIO */
+
+.bio {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.bio__img {
+  border-radius: 50%;
+  background-color: #d1d0cd;
+  height: 15rem;
+  width: 15rem;
+  box-shadow: 10px 5px 0 var(--primary);
 }

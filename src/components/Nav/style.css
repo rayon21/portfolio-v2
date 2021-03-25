@@ -7,3 +7,7 @@
 .nav__link:hover {
   text-decoration: underline;
 }
+
+.nav__link:visited {
+  color: #2d2d2f;
+}

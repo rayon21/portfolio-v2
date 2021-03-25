@@ -1,10 +1,15 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
+
 import Nav from "../components/Nav";
 import ColourSwatch from "../components/ColourSwatch";
 import Footer from '../components/Footer';
 
 const StyleGuide = () => (
     <div className="container">
+        <Helmet>
+            <title>Raymond Eng - Style Guide</title>
+        </Helmet>
         <section>
             <h2 className="style__heading">Typography</h2>
             <div className="style__content">
@@ -46,16 +51,11 @@ const StyleGuide = () => (
             </div>
         </section>
         <section>
-            <h2 class="style__heading">Contact</h2>
-            <div className="style__content">
-                <button>Contact</button>
-            </div>
-        </section>
-        <section>
             <h2 className="style__heading">Bio</h2>
             <div className="style__content">
                 <div className="bio">
-                    <img src="" alt="" className="bio__img"/>
+                    <img src="https://placeimg.com/640/480/any" alt="" className="bio__img"/>
+                    <p className="bio__text">purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam non</p>
                 </div>
             </div>
         </section>
@@ -68,7 +68,8 @@ const StyleGuide = () => (
         <section>
             <h2 className="style__heading">Citations</h2>
             <div className="style__content">
-                <a href="https://github.com/react-static/react-static" className="link">react-static</a>
+                <a href="https://github.com/react-static/react-static" className="link --block">react-static</a>
+                <a href="https://fonts.google.com/specimen/Poppins?preview.text_type=custom" className="link --block">Google Fonts</a>
             </div>
         </section>
         
