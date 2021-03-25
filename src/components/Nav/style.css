@@ -1,7 +1,28 @@
+.nav {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.nav__logo-name {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
 .nav__link {
   margin-right: 5rem;
   font-size: 1.3rem;
   text-decoration: none;
+}
+
+.nav__link:last-child {
+  margin-right: 0;
 }
 
 .nav__link:hover {
@@ -10,4 +31,9 @@
 
 .nav__link:visited {
   color: #2d2d2f;
+}
+
+.nav__brand-container {
+  display: flex;
+  align-items: center;
 }

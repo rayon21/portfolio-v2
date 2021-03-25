@@ -1,7 +1,9 @@
 import React from "react";
 import { Root, Routes, addPrefetchExcludes } from "react-static";
 //
-import { Link, Router } from "components/Router";
+import { Router } from "components/Router";
+import Nav from "components/Nav";
+import CircleCursor from "components/CircleCursor";
 import Dynamic from "containers/Dynamic";
 
 import "./app.css";
@@ -13,10 +15,8 @@ addPrefetchExcludes(["dynamic"]);
 function App() {
   return (
     <Root>
-      {/* <nav>
-        <Link to="/">Home</Link>
-        <Link to="/style-guide">Style Guide</Link>
-      </nav> */}
+      <CircleCursor />
+      <Nav />
       <div className="content">
         <React.Suspense fallback={<em>Loading...</em>}>
           <Router>

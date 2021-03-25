@@ -6,6 +6,11 @@
   --background: #e4e3e1;
 }
 
+::selection {
+  background-color: var(--primary);
+  color: #fff;
+}
+
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -107,4 +112,14 @@ body {
   height: 15rem;
   width: 15rem;
   box-shadow: 10px 5px 0 var(--primary);
+}
+
+/* TEXT CONTAINER */
+.text-container__subtitle {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.text-container__heading {
+  margin-top: 0;
 }

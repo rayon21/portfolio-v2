@@ -27,25 +27,25 @@ const StyleGuide = () => (
             </div>
         </section>
         <section>
-            <h2 class="style__heading">Buttons</h2>
+            <h2 className="style__heading">Buttons</h2>
             <div className="style__content">
                 <button className="btn">Submit</button>
             </div>
         </section>
         <section>
-            <h2 class="style__heading">Links</h2>
+            <h2 className="style__heading">Links</h2>
             <div className="style__content">
                 <a href="#" className="link">This is a link.</a>
             </div>
         </section>
         <section>
-            <h2 class="style__heading">Forms</h2>
+            <h2 className="style__heading">Forms</h2>
             <div className="style__content">
-                <input class="input" type="text" placeholder="This is a input field"/>
+                <input className="input" type="text" placeholder="This is a input field"/>
             </div>
         </section>
         <section>
-            <h2 class="style__heading">Navigation</h2>
+            <h2 className="style__heading">Navigation</h2>
             <div className="style__content">
                 <Nav />
             </div>
@@ -60,6 +60,15 @@ const StyleGuide = () => (
             </div>
         </section>
         <section>
+            <h2 className="style__heading">Text Container</h2>
+            <div className="style__content">
+                <span className="text-container__subtitle">Sub Title</span>
+                <h2 className="text-container__heading">Main Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+        
+        <section>
             <h2 className="style__heading">Footer</h2>
             <div className="style__content">
                 <Footer />
@@ -70,6 +79,7 @@ const StyleGuide = () => (
             <div className="style__content">
                 <a href="https://github.com/react-static/react-static" className="link --block">react-static</a>
                 <a href="https://fonts.google.com/specimen/Poppins?preview.text_type=custom" className="link --block">Google Fonts</a>
+                <a href="https://worldvectorlogo.com/logo/espressif-systems" className="link --block">Logo</a>
             </div>
         </section>
         
