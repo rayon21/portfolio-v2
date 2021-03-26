@@ -21,6 +21,33 @@ Reflection:
 This experience has given me the opportunity to integrate my design and technical skills to develop a full stack application. It highlighted the importance of requirements gathering and the necessity to get client feedback often and early. Early on the project, existing problems with the existing application were identified and were improved upon. The result is an application that exceeded the client’s expectation both in the design front and technically as well.
 `}
       </TextContainer>
+      <h1 className="title--large">project 2.</h1>
+      <TextContainer title="Intersect" subtitle="Interactive prototype">
+      Overview:
+My team was tasked with developing a high fidelity prototype for an app idea. We decided on a dating mobile application based on proximity based matching. 
+
+Identify problems:
+Developing relevant user features that help users accomplish their goals. 
+
+Solutions:
+--Process
+Research
+User interviews were conducted to understand user goals
+Ideation
+Personas were created to illustrate user needs
+Design
+Wireframes and high fidelity prototypes were developed in Figma and Framer. 
+Test
+User testing with the high fidelity prototype was done to identify problems
+Heuristic evaluations were performed to identify issues.
+
+
+
+Reflection:
+
+This project taught me to align my design towards the user goals. Without understanding the user or their problems, it is difficult to solve their problems.
+
+      </TextContainer>
     </div>
     <Footer />
   </>

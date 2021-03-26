@@ -53,9 +53,7 @@ const StyleGuide = () => (
     </section>
     <section>
       <h2 className="style__heading">Navigation</h2>
-      <div className="style__content">
-        <Nav />
-      </div>
+      <div className="style__content">{/* <Nav /> */}</div>
     </section>
     <section>
       <h2 className="style__heading">Bio</h2>

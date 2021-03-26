@@ -47,7 +47,7 @@ body {
 }
 
 .--large-font {
-  font-size: 10rem;
+  font-size: 15vw;
   padding: 0;
   margin: 0;
   color: var(--greyDarker);
@@ -117,4 +117,17 @@ body {
 /* WORK */
 .title--large {
   font-size: 10rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .style__content {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .bio {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
