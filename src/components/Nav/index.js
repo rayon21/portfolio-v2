@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./style.css";
 import { Link } from "../Router";
+import useOutsideClick from "../../util/useOutsideClick";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const overlayMenuRef = useRef();
+
+  useOutsideClick(overlayMenuRef, () => isOpen && setIsOpen(false));
 
   const handleMenuClick = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleOverlayNavLinkClick = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -59,14 +67,30 @@ const Nav = () => {
           }}
         ></div>
       </div>
-      <nav className="overlay-nav" style={{ right: isOpen ? 0 : "-100%" }}>
-        <Link className="nav__link --block --med-font" to="/">
+      <nav
+        className="overlay-nav"
+        style={{ right: isOpen ? 0 : "-100%" }}
+        ref={overlayMenuRef}
+      >
+        <Link
+          className="nav__link --block --med-font"
+          to="/"
+          onClick={handleOverlayNavLinkClick}
+        >
           Home
         </Link>
-        <Link className="nav__link --block --med-font" to="/work">
+        <Link
+          className="nav__link --block --med-font"
+          to="/work"
+          onClick={handleOverlayNavLinkClick}
+        >
           Work
         </Link>
-        <Link className="nav__link --block --med-font" to="/style-guide">
+        <Link
+          className="nav__link --block --med-font"
+          to="/style-guide"
+          onClick={handleOverlayNavLinkClick}
+        >
           Style Guide
         </Link>
       </nav>

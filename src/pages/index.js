@@ -1,9 +1,11 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 const Default = () => (
-  <div style={{ textAlign: "center" }}>
-    <h1></h1>
-  </div>
+  <>
+    <div className="container"></div>
+    <Footer />
+  </>
 );
 
 export default Default;

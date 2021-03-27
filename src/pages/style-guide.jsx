@@ -24,6 +24,7 @@ const StyleGuide = () => (
         <div className="flex-container">
           <ColourSwatch hex="0B00FF" />
           <ColourSwatch hex="333" />
+          <ColourSwatch hex="eadb00" />
         </div>
       </div>
     </section>
@@ -114,6 +115,15 @@ const StyleGuide = () => (
           className="link --block"
         >
           Logo
+        </a>
+        <a href="https://simpleicons.org/" className="link --block">
+          Social Media Icons
+        </a>
+        <a
+          href="https://medium.com/@kevinfelisilda/click-outside-element-event-using-react-hooks-2c540814b661"
+          className="link --block"
+        >
+          Outside Click Hook
         </a>
       </div>
     </section>
