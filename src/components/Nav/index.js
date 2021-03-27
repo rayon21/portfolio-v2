@@ -73,23 +73,32 @@ const Nav = () => {
         ref={overlayMenuRef}
       >
         <Link
-          className="nav__link --block --med-font"
+          className="nav__link nav__link-overlay"
           to="/"
           onClick={handleOverlayNavLinkClick}
+          style={{
+            transform: isOpen ? "translateX(0)" : "translateX(2rem)",
+          }}
         >
           Home
         </Link>
         <Link
-          className="nav__link --block --med-font"
+          className="nav__link nav__link-overlay"
           to="/work"
           onClick={handleOverlayNavLinkClick}
+          style={{
+            transform: isOpen ? "translateX(0)" : "translateX(2rem)",
+          }}
         >
           Work
         </Link>
         <Link
-          className="nav__link --block --med-font"
+          className="nav__link nav__link-overlay"
           to="/style-guide"
           onClick={handleOverlayNavLinkClick}
+          style={{
+            transform: isOpen ? "translateX(0)" : "translateX(2rem)",
+          }}
         >
           Style Guide
         </Link>

@@ -67,10 +67,14 @@
   padding: 5rem;
   transition: right 1s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: right;
+  z-index: 4;
 }
 
-.--med-font {
+.nav__link-overlay {
   font-size: 8vw;
+  display: block;
+  transition: transform 1.5s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
+  transform: translateX(2rem);
 }
 
 @media only screen and (max-width: 700px) {
