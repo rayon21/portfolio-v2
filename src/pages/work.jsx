@@ -2,14 +2,22 @@ import React from "react";
 import TextContainer from "../components/TextContainer";
 import Image from "../components/Image";
 import Footer from "../components/Footer";
+import Badge from "../components/Badge";
 
 import jkcDashboardImg from "../images/jkcsales-dashboard.png";
+import jkcReportImg from "../images/jkcsales-report.png";
 
 export const Work = () => (
   <>
     <div className="container">
       <h1 className="title--large">project 1.</h1>
       <TextContainer title="JKCsales CRM Dashboard" subtitle="Web Application">
+        <div>
+          <Badge>AWS</Badge>
+          <Badge>React</Badge>
+          <Badge>MongoDB</Badge>
+          <Badge>Javascript</Badge>
+        </div>
         <Image src={jkcDashboardImg} alt="JKC dashboard screenshot" />
         <h6 className="subtitle--small">Overview</h6>
         <p>
@@ -43,9 +51,15 @@ export const Work = () => (
           improved upon. The result is an application that exceeded the client’s
           expectation both in the design front and technically as well.
         </p>
+        <Image src={jkcReportImg} alt="JKCsales report user interface" />
       </TextContainer>
       <h1 className="title--large">project 2.</h1>
       <TextContainer title="Intersect" subtitle="Interactive prototype">
+        <div>
+          <Badge>Framer</Badge>
+          <Badge>Figma</Badge>
+          <Badge>UI/UX</Badge>
+        </div>
         <h6 className="subtitle--small">Overview</h6>
         <p>
           My team was tasked with developing a high fidelity prototype for an

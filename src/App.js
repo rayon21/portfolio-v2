@@ -4,6 +4,7 @@ import { Root, Routes, addPrefetchExcludes } from "react-static";
 import { Router } from "components/Router";
 import Nav from "components/Nav";
 import CircleCursor from "components/CircleCursor";
+import LoadingIndicator from "components/LoadingIndicator";
 import Dynamic from "containers/Dynamic";
 
 import "./app.css";
@@ -18,7 +19,7 @@ function App() {
       <CircleCursor />
       <Nav />
       <div className="content">
-        <React.Suspense fallback={<em>Loading...</em>}>
+        <React.Suspense fallback={<LoadingIndicator />}>
           <Router>
             <Dynamic path="dynamic" />
             <Routes path="*" />

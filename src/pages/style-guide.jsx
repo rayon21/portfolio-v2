@@ -5,6 +5,10 @@ import Nav from "../components/Nav";
 import ColourSwatch from "../components/ColourSwatch";
 import Footer from "../components/Footer";
 import TextContainer from "../components/TextContainer";
+import LoadingIndicator from "../components/LoadingIndicator";
+import SocialMeidaIcons from "../components/SocialMediaIcons";
+import Badge from "../components/Badge";
+import Bio from "../components/Bio";
 
 const StyleGuide = () => (
   <div className="container">
@@ -59,20 +63,25 @@ const StyleGuide = () => (
     <section>
       <h2 className="style__heading">Bio</h2>
       <div className="style__content">
-        <div className="bio">
-          <img
-            src="https://placeimg.com/640/480/any"
-            alt=""
-            className="bio__img"
-          />
-          <p className="bio__text">
-            purus ut faucibus pulvinar elementum integer enim neque volutpat ac
+        <Bio
+          src="https://placeimg.com/640/480/any"
+          text="purus ut faucibus pulvinar elementum integer enim neque volutpat ac
             tincidunt vitae semper quis lectus nulla at volutpat diam ut
             venenatis tellus in metus vulputate eu scelerisque felis imperdiet
             proin fermentum leo vel orci porta non pulvinar neque laoreet
             suspendisse interdum consectetur libero id faucibus nisl tincidunt
-            eget nullam non
-          </p>
+            eget nullam non"
+        />
+      </div>
+    </section>
+    <section>
+      <h2 className="style__heading">Badges</h2>
+      <div className="style__content">
+        <div>
+          <Badge>AWS</Badge>
+          <Badge>React</Badge>
+          <Badge>MongoDB</Badge>
+          <Badge>Javascript</Badge>
         </div>
       </div>
     </section>
@@ -88,11 +97,26 @@ const StyleGuide = () => (
         mollit anim id est laborum.
       </TextContainer>
     </section>
+    <section>
+      <h2 className="style__heading">Social Media Icons</h2>
+      <div className="style__content">
+        <SocialMeidaIcons />
+      </div>
+    </section>
+    <section>
+      <h2 className="style__heading">Loading Indicator</h2>
+      <div className="style__content">
+        <LoadingIndicator />
+      </div>
+    </section>
 
     <section>
       <h2 className="style__heading">Footer</h2>
       <div className="style__content">
-        <Footer />
+        <Footer
+          style={{ bottom: "auto", position: "static" }}
+          hidePlaceholder
+        />
       </div>
     </section>
     <section>

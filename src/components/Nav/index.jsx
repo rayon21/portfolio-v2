@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import "./style.css";
 import { Link } from "../Router";
 import useOutsideClick from "../../util/useOutsideClick";
+import SocialMediaIcons from "../SocialMediaIcons";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,36 +73,39 @@ const Nav = () => {
         style={{ right: isOpen ? 0 : "-100%" }}
         ref={overlayMenuRef}
       >
-        <Link
-          className="nav__link nav__link-overlay"
-          to="/"
-          onClick={handleOverlayNavLinkClick}
-          style={{
-            transform: isOpen ? "translateX(0)" : "translateX(2rem)",
-          }}
-        >
-          Home
-        </Link>
-        <Link
-          className="nav__link nav__link-overlay"
-          to="/work"
-          onClick={handleOverlayNavLinkClick}
-          style={{
-            transform: isOpen ? "translateX(0)" : "translateX(2rem)",
-          }}
-        >
-          Work
-        </Link>
-        <Link
-          className="nav__link nav__link-overlay"
-          to="/style-guide"
-          onClick={handleOverlayNavLinkClick}
-          style={{
-            transform: isOpen ? "translateX(0)" : "translateX(2rem)",
-          }}
-        >
-          Style Guide
-        </Link>
+        <div>
+          <Link
+            className="nav__link nav__link-overlay"
+            to="/"
+            onClick={handleOverlayNavLinkClick}
+            style={{
+              transform: isOpen ? "translateX(0)" : "translateX(2rem)",
+            }}
+          >
+            Home
+          </Link>
+          <Link
+            className="nav__link nav__link-overlay"
+            to="/work"
+            onClick={handleOverlayNavLinkClick}
+            style={{
+              transform: isOpen ? "translateX(0)" : "translateX(2rem)",
+            }}
+          >
+            Work
+          </Link>
+          <Link
+            className="nav__link nav__link-overlay"
+            to="/style-guide"
+            onClick={handleOverlayNavLinkClick}
+            style={{
+              transform: isOpen ? "translateX(0)" : "translateX(2rem)",
+            }}
+          >
+            Style Guide
+          </Link>
+        </div>
+        <SocialMediaIcons />
       </nav>
     </div>
   );

@@ -128,6 +128,13 @@ body {
   margin: 1rem 0;
 }
 
+/* HEADER */
+.header__subtitle {
+  margin: 0;
+  margin-left: 0.6rem;
+  margin-bottom: 5rem;
+}
+
 @media only screen and (max-width: 700px) {
   .style__content {
     margin-left: 0;

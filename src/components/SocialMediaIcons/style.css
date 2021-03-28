@@ -1,0 +1,13 @@
+.social-media-icons {
+  display: flex;
+}
+
+.media-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.media-icon:hover path {
+  fill: blue;
+}

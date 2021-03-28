@@ -1,25 +1,24 @@
 import React from "react";
 import "./style.css";
 
-const Footer = () => (
+const Footer = ({ style, hidePlaceholder }) => (
   <>
-    <div className="placeholder"></div>
-    <footer className="footer">
+    {!hidePlaceholder && <div className="placeholder"></div>}
+    <footer className="footer" style={style}>
       <nav>
         <a href="" className="footer__link">
           Github
         </a>
         <a href="" className="footer__link">
-          Facebook
-        </a>
-        <a href="" className="footer__link">
-          Instagram
+          LinkedIn
         </a>
         <a href="" className="footer__link">
           Behance
         </a>
       </nav>
-      <span className="footer__copyright">Raymond Eng © 2021</span>
+      <span className="footer__copyright">
+        Raymond Eng © {new Date().getFullYear()}
+      </span>
     </footer>
   </>
 );

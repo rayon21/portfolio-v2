@@ -1,0 +1,21 @@
+:root {
+  --loader-size: 2rem;
+}
+
+.loader {
+  width: var(--loader-size);
+  height: var(--loader-size);
+  background-color: blue;
+  border-radius: 50%;
+  animation: grow 0.6s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
