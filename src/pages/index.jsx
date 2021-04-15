@@ -129,11 +129,15 @@ const Default = () => {
             </Link>
           </div>
         </section>
-        <Bio
-          src={me}
-          alt="A picture of me smiling"
-          text="Hey! My name is Raymond Eng. I am currently a student at Simon Fraser University studying computer science. I am a developer with a passion for design. I specialize in developing interactive web applications. Creating rich digital experiences is part of my expertise."
-        />
+        <section className="home-section">
+          <h1 className="--large-font --heading">me.</h1>
+          <Bio
+            className="mt-5"
+            src={me}
+            alt="A picture of me smiling"
+            text="Hey! My name is Raymond Eng. I am currently a student at Simon Fraser University studying computer science. I am a developer with a passion for design. I specialize in developing interactive web applications. Creating rich digital experiences is part of my expertise."
+          />
+        </section>
         <section class="home-section contact-section">
           <h1 className="--large-font --heading">contact me.</h1>
           <p className="header__subtitle">Drop a hello below!</p>

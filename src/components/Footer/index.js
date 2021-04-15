@@ -6,10 +6,13 @@ const Footer = ({ style, hidePlaceholder }) => (
     {!hidePlaceholder && <div className="placeholder"></div>}
     <footer className="footer" style={style}>
       <nav>
-        <a href="" className="footer__link">
+        <a href="https://github.com/rayon21" className="footer__link">
           Github
         </a>
-        <a href="" className="footer__link">
+        <a
+          href="https://www.linkedin.com/in/raymondeng-"
+          className="footer__link"
+        >
           LinkedIn
         </a>
         <a href="" className="footer__link">
