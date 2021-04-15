@@ -3,7 +3,9 @@ import "./style.css";
 
 const Bio = ({ src, text }) => (
   <div className="bio">
-    <img src={src} alt="" className="bio__img" />
+    <div className="bio-img__container">
+      <img src={src} alt="" className="bio__img" />
+    </div>
     <p className="bio__text">{text}</p>
   </div>
 );

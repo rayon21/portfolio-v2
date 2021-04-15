@@ -1,0 +1,21 @@
+/* BIO */
+
+.bio {
+  display: flex;
+  align-items: center;
+}
+
+.bio__img {
+  border-radius: 50%;
+  background-color: #d1d0cd;
+  height: 15rem;
+  width: 15rem;
+  box-shadow: 10px 5px 0 var(--primary);
+  object-fit: cover;
+}
+
+.bio-img__container {
+  width: 15rem;
+  height: 15rem;
+  margin-right: 4rem;
+}
