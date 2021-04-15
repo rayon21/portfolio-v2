@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import { gsap, Power1, Power0 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "../components/Router";
+import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Bio from "../components/Bio";
 
 import jkcSalesImg from "../images/jkcsales-dashboard.png";
+import jkcsalesLogo from "../images/jkcsales-logo.svg";
 import posterImg from "../images/poster.jpeg";
 import intersectLogo from "../images/intersect-logo.png";
 import me from "../images/me.jpg";
@@ -87,6 +90,9 @@ const Default = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Raymond Eng</title>
+      </Helmet>
       <div className="container" ref={ref}>
         <header class="home-section main-section">
           <div className="main-section__text">
@@ -107,34 +113,36 @@ const Default = () => {
             </div>
           </div>
         </header>
-        <section className="home-section work-section">
+        <section className="home-section work-section mb-5">
           <h1 className="--heading">work.</h1>
           <p className="header__subtitle"></p>
           <div className="work-grid">
-            <img src={posterImg} alt="" class="work-grid__img" />
-            <div className="project-card project-card__intersect work-grid__img">
-              <img src={intersectLogo} alt="Intersect Logo" />
-            </div>
-          </div>
-        </section>
-        <section class="home-section contact-section">
-          <h1 className="--large-font --heading">contact me.</h1>
-          <p className="header__subtitle">Drop a hello below!</p>
-          <div className="flex-center">
-            <button className="btn mt-5">ray3ng@gmail.com</button>
+            <Link to="/work#jkcsales">
+              <div className="project-card project-card__jkcsales work-grid__img">
+                <img src={jkcsalesLogo} alt="" class="work-grid__img" />
+              </div>
+            </Link>
+            <Link to="/work#intersect">
+              <div className="project-card project-card__intersect work-grid__img">
+                <img src={intersectLogo} alt="Intersect Logo" />
+              </div>
+            </Link>
           </div>
         </section>
         <Bio
           src={me}
           alt="A picture of me smiling"
-          text="purus ut faucibus pulvinar elementum integer enim neque volutpat ac
-            tincidunt vitae semper quis lectus nulla at volutpat diam ut
-            venenatis tellus in metus vulputate eu scelerisque felis imperdiet
-            proin fermentum leo vel orci porta non pulvinar neque laoreet
-            suspendisse interdum consectetur libero id faucibus nisl tincidunt
-            eget nullam non"
+          text="Hey! My name is Raymond Eng. I am currently a student at Simon Fraser University studying computer science. I am a developer with a passion for design. I specialize in developing interactive web applications. Creating rich digital experiences is part of my expertise."
         />
-        <div className="mt-5"></div>
+        <section class="home-section contact-section">
+          <h1 className="--large-font --heading">contact me.</h1>
+          <p className="header__subtitle">Drop a hello below!</p>
+          <div className="flex-center">
+            <a href="mailto:ray3ng@gmail.com">
+              <button className="btn mt-5 --btn-lg">ray3ng@gmail.com</button>
+            </a>
+          </div>
+        </section>
       </div>
       <Footer />
     </>

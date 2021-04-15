@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import TextContainer from "../components/TextContainer";
 import Image from "../components/Image";
 import Footer from "../components/Footer";
@@ -9,6 +10,9 @@ import jkcReportImg from "../images/jkcsales-report.png";
 
 export const Work = () => (
   <>
+    <Helmet>
+      <title>Raymond Eng - Work</title>
+    </Helmet>
     <div className="container">
       <h1 className="title--large">project 1.</h1>
       <TextContainer title="JKCsales CRM Dashboard" subtitle="Web Application">

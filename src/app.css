@@ -30,6 +30,10 @@ body {
   justify-content: center;
 }
 
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
 .mt-5 {
   margin-top: 5rem;
 }
@@ -88,6 +92,11 @@ body {
   background-color: blue;
   color: #fff;
   cursor: pointer;
+}
+
+.--btn-lg {
+  font-size: 1.7rem;
+  padding: 1.5rem 2.5rem;
 }
 
 /* LINK */
@@ -182,7 +191,6 @@ body {
 }
 
 .work-grid__img:hover {
-  transform: scale(0.95);
   cursor: pointer;
 }
 
@@ -190,6 +198,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 20rem;
 }
 
 .project-card__intersect {
@@ -201,29 +210,38 @@ body {
   );
 }
 
-.project-card__intersect img {
-  width: 30%;
+.project-card__jkcsales {
+  background: linear-gradient(135deg, #009ec3, #5b247a);
 }
 
-@media only screen and (max-width: 700px) {
+.project-card__jkcsales img {
+  transform: scale(0.4);
+}
+
+.project-card__intersect img {
+  min-width: 30%;
+  max-width: 40%;
+}
+
+@media only screen and (max-width: 900px) {
   .style__content {
     margin-left: 0;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .bio {
     flex-direction: column;
     gap: 2rem;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .main-section__imgs {
     display: none;
   }
 
   .work-grid {
-    display: block;
+    grid-template-columns: 1fr;
   }
 }

@@ -25,6 +25,7 @@
   margin-right: 5rem;
   font-size: 1.3rem;
   text-decoration: none;
+  color: #2d2d2f;
 }
 
 .nav__link:last-child {
@@ -33,6 +34,7 @@
 
 .nav__link:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .nav__link:visited {
@@ -86,7 +88,7 @@
   transform: translateX(2rem);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .hamburger {
     display: block;
     position: fixed;

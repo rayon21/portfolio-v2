@@ -52,7 +52,13 @@ const Nav = () => {
           </Link>
         </div>
       </nav>
-      <div className="hamburger" onClick={handleMenuClick}>
+      <div
+        className="hamburger"
+        onClick={handleMenuClick}
+        aria-label="Toggle the menu"
+        role="button"
+        aria-expanded={isOpen}
+      >
         <div
           className="hamburger__bar"
           style={{
