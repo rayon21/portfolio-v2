@@ -1,0 +1,62 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "basePath": "~raymonde",
+  "plugins": [
+    [
+      "/Users/ray/Documents/IAT339/portfolio/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      {
+        "location": "/Users/ray/Documents/IAT339/portfolio/src/pages"
+      }
+    ],
+    "/Users/ray/Documents/IAT339/portfolio/node_modules/react-static-plugin-reach-router/browser.api.js",
+    "/Users/ray/Documents/IAT339/portfolio/node_modules/react-static-plugin-sitemap/dist/node.api.js",
+    "/Users/ray/Documents/IAT339/portfolio"
+  ],
+  "paths": {
+    "ROOT": "/Users/ray/Documents/IAT339/portfolio",
+    "SRC": "/Users/ray/Documents/IAT339/portfolio/src",
+    "DIST": "/Users/ray/Documents/IAT339/portfolio/dist",
+    "ASSETS": "/Users/ray/Documents/IAT339/portfolio/dist",
+    "PLUGINS": "/Users/ray/Documents/IAT339/portfolio/plugins",
+    "TEMP": "/Users/ray/Documents/IAT339/portfolio/tmp",
+    "ARTIFACTS": "/Users/ray/Documents/IAT339/portfolio/artifacts",
+    "PUBLIC": "/Users/ray/Documents/IAT339/portfolio/public",
+    "NODE_MODULES": "/Users/ray/Documents/IAT339/portfolio/node_modules",
+    "EXCLUDE_MODULES": "/Users/ray/Documents/IAT339/portfolio/node_modules",
+    "PACKAGE": "/Users/ray/Documents/IAT339/portfolio/package.json",
+    "HTML_TEMPLATE": "/Users/ray/Documents/IAT339/portfolio/dist/index.html",
+    "STATIC_DATA": "/Users/ray/Documents/IAT339/portfolio/dist/staticData"
+  },
+  "siteRoot": "/",
+  "publicPath": "/~raymonde/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}

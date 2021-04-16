@@ -15,7 +15,7 @@ const Footer = ({ style, hidePlaceholder }) => (
         >
           LinkedIn
         </a>
-        <a href="" className="footer__link">
+        <a href="https://www.behance.net/" className="footer__link">
           Behance
         </a>
       </nav>
