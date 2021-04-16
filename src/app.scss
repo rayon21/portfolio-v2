@@ -1,13 +1,7 @@
-:root {
-  --grey300: #5c5c5c;
-  --grey500: #000;
-  --greyDarker: #2d2d2f;
-  --primary: blue;
-  --background: #e4e3e1;
-}
+@import "variables";
 
 ::selection {
-  background-color: var(--primary);
+  background-color: $primary;
   color: #fff;
 }
 
@@ -21,8 +15,8 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  color: var(--greyDarker);
-  background-color: var(--background);
+  color: $greyDarker;
+  background-color: $background;
 }
 
 .flex-center {
@@ -45,16 +39,16 @@ body {
 
 .container {
   padding: 4rem;
-  background-color: var(--background);
+  background-color: $background;
   z-index: 2;
   position: relative;
 }
 
 .style__heading {
-  border-top: 1px solid var(--grey500);
+  border-top: 1px solid $grey500;
   padding-top: 2rem;
   font-size: 1rem;
-  color: var(--grey300);
+  color: $grey300;
 }
 
 .style__content {
@@ -67,7 +61,7 @@ body {
   padding: 0;
   margin: 0;
   white-space: nowrap;
-  color: var(--greyDarker);
+  color: $greyDarker;
 }
 
 .--heading {
@@ -103,7 +97,7 @@ body {
 
 .link {
   text-decoration: none;
-  color: var(--grey500);
+  color: $grey500;
 }
 
 .link:hover {
@@ -118,13 +112,13 @@ body {
   height: 5rem;
   outline: none;
   font-size: 2rem;
-  border-bottom: 5px solid var(--greyDarker);
+  border-bottom: 5px solid $greyDarker;
   background-color: transparent;
   padding: 1.5rem;
 }
 
 .input:focus {
-  border-color: var(--primary);
+  border-color: $primary;
 }
 
 /* WORK */

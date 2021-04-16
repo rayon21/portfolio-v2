@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 
 const Bio = ({ src, text, alt, className }) => (
   <div className={`bio ${className}`}>

@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 /* BIO */
 
 .bio {
@@ -10,7 +12,7 @@
   background-color: #d1d0cd;
   height: 15rem;
   width: 15rem;
-  box-shadow: 10px 5px 0 var(--primary);
+  box-shadow: 10px 5px 0 $primary;
   object-fit: cover;
 }
 
