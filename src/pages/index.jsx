@@ -118,13 +118,27 @@ const Default = () => {
           <p className="header__subtitle"></p>
           <div className="work-grid">
             <Link to="/work#jkcsales">
-              <div className="project-card project-card__jkcsales work-grid__img">
-                <img src={jkcsalesLogo} alt="" class="work-grid__img" />
+              <div className="project-card__hover">
+                <div className="project-card project-card__jkcsales">
+                  <img src={jkcsalesLogo} alt="" class="work-grid__img" />
+                  <p className="project-card__text">
+                    Dashboard web application. React, AWS, MongoDB.
+                  </p>
+                </div>
               </div>
             </Link>
             <Link to="/work#intersect">
-              <div className="project-card project-card__intersect work-grid__img">
-                <img src={intersectLogo} alt="Intersect Logo" />
+              <div className="project-card__hover">
+                <div className="project-card project-card__intersect">
+                  <img
+                    src={intersectLogo}
+                    alt="Intersect Logo"
+                    className=" work-grid__img"
+                  />
+                  <p className="project-card__text">
+                    Social meeting application prototype. UI/UX. Framer.
+                  </p>
+                </div>
               </div>
             </Link>
           </div>
