@@ -164,7 +164,7 @@ body {
 }
 
 .img--vertical {
-  width: 20vw;
+  width: 24vw;
   height: 80vh;
   margin-right: 1rem;
   position: relative;
@@ -273,6 +273,8 @@ body {
   opacity: 0;
   z-index: 11;
   transition: all 0.35s;
+  width: 80%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 900px) {

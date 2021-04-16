@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Bio from "../components/Bio";
 
-import jkcSalesImg from "../images/jkcsales-dashboard.png";
+import jkcSalesImg from "../images/jkcsales-mobile.png";
 import jkcsalesLogo from "../images/jkcsales-logo.svg";
 import posterImg from "../images/poster.jpeg";
 import intersectLogo from "../images/intersect-logo.png";
@@ -100,9 +100,9 @@ const Default = () => {
             <p className="header__subtitle">
               My name is Raymond Eng. I'm a frontend developer.
             </p>
-            <a href="#" className="link">
+            <Link to="work" className="link">
               View my work
-            </a>
+            </Link>
           </div>
           <div className="main-section__imgs">
             <div className="img--vertical" id="img-dashboard">

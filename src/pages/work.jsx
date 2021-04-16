@@ -29,7 +29,12 @@ export const Work = () => (
           <Badge>MongoDB</Badge>
           <Badge>Javascript</Badge>
         </div>
-        <Image src={jkcDashboardImg} alt="JKC dashboard screenshot" />
+        <figure className="figure">
+          <Image src={jkcDashboardImg} alt="JKC dashboard screenshot" />
+          <figcaption>
+            Homepage displaying sale statistics per store and per employee
+          </figcaption>
+        </figure>
         <h6 className="subtitle--small">Role</h6>
         <p>Full Stack - Independent Project</p>
         <h6 className="subtitle--small">Overview</h6>
@@ -62,9 +67,14 @@ export const Work = () => (
           to get client feedback often and early. Early on the project, existing
           problems with the existing application were identified and were
           improved upon. The result is an application that exceeded the client’s
-          expectation both in the design front and technically as well.
+          expectation both in the design front and technically as well. However,
+          more adequate integration testing would be ideal as additional
+          features brought additional bugs.
         </p>
-        <Image src={jkcReportImg} alt="JKCsales report user interface" />
+        <figure className="figure">
+          <Image src={jkcReportImg} alt="JKCsales report user interface" />
+          <figcaption>Sale aggregations by type and store location.</figcaption>
+        </figure>
       </TextContainer>
       <div id="intersect">
         <h1 className="title--large">project 2.</h1>
